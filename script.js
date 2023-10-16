@@ -11,7 +11,7 @@ const comparePasswords = (e) => {
   p1 = password1.value;
   p2 = password2.value;
   console.log(e);
-  if(p1 === p2){
+  if(p1 === p2 && p1 && p2){
     console.log("true");
     password1.classList = ["success"];
     password2.classList = ["success"];

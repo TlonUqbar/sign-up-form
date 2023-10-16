@@ -41,47 +41,47 @@
         <div id="form">
           <div class="gutter"></div>
           <div id="form-wrapper">
-            <form action="/" method="post">
+            <form action="/" method="get">
               <div class="group1">
                 <div class="input">
                   <label for="first-name">First Name:
-                    <input type="text" name="first-name" id="first-name" autocomplete="off">
+                    <input type="text" name="first-name" id="first-name" autocomplete="off" required maxlength="50" placeholder="John">
                   </label>
                 </div>
                 <div class="input">
                   <label for="last-name">Last Name:
-                    <input type="text" name="last-name" id="last-name" autocomplete="off">
+                    <input type="text" name="last-name" id="last-name" autocomplete="off" required maxlength="50" placeholder="Doe">
                   </label>
                 </div>
               </div>
               <div class="group2">
                 <div class="input">
                   <label for="email">E-mail:
-                    <input type="email" name="email" id="email" autocomplete="off" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address" required>
+                    <input type="email" name="email" id="email" autocomplete="off" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address" required placeholder="user@example.com">
                   </label>
                 </div>
                 <div class="input">
                   <label for="telephone">Phone Number:
-                    <input type="tel" name="phone" id="telephone" autocomplete="off" required>
+                    <input type="tel" name="phone" id="telephone" autocomplete="off" required pattern="/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/" maxlength="14" placeholder="(000) 111-2222">
                   </label>
                 </div> 
               </div>
               <div class="group3">
                 <div class="input">
                   <label for="password">Password:
-                    <input type="password" name="password" id="password" autocomplete="off" class="" required>
+                    <input type="password" name="password" id="password" autocomplete="off" class="" required placeholder="******">
                     <p class="error-message">Passwords do not match.</p>
                   </label>
                   
                 </div>
                 <div class="input">
                   <label for="confirm">Confirm Password:
-                    <input type="password" name="confirm" id="confirm" autocomplete="off" class="" required>
+                    <input type="password" name="confirm" id="confirm" autocomplete="off" class="" required placeholder="******">
                     <p class="success-message">Passwords match.</p>
                   </label>
                 </div>
               </div>
-            </form>
+          
           </div>
           <div class="gutter"></div>
         </div>
@@ -93,6 +93,7 @@
               <input type="submit" value="Create Account" class="create-account-btn">
               <p>Already have an account? <a href="#" class="login">Log in</a></p>
             </div> 
+          </form>
           </div>
           <div class="gutter"></div>
         </div>  
